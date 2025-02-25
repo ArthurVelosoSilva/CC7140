@@ -39,7 +39,6 @@ public class GameOverDetector_script : MonoBehaviour
         if (coll.gameObject.tag == "Ball")
         {
             Destroy(coll.gameObject);		//Destroy the ball
-            DestroyObjectsWithTag("Brick");  // Destroi todos os blocos do jogo
 			GameManager_script.gameOver = true;		//Turn Game Over boolean to true
 			gameOverPanel.SetActive(true);		//Turn on the Game over Panel
         }
