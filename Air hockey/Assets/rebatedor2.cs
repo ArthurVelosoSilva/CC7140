@@ -16,6 +16,7 @@ public class Pursuer : MonoBehaviour
     }
 
     // Método que é chamado quando o perseguidor colide com o alvo
+  /*
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject == target.gameObject) // Verifica se o alvo foi atingido
@@ -24,6 +25,7 @@ public class Pursuer : MonoBehaviour
             StartCoroutine(MoveToDestination(collision.gameObject)); 
         }
     }
+*/
 
     // Coroutine para mover o alvo até o ponto final com um movimento suave
     private System.Collections.IEnumerator MoveToDestination(GameObject targetObject)
